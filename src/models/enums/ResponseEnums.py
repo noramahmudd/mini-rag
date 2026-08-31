@@ -1,0 +1,19 @@
+from enum import Enum
+
+class ResponseSignal(Enum):
+    FILE_VALIDATION_SUCCESS="FILE_VALIDATION_SUCCESS"
+    FILE_TYPE_NOT_SUPPORTED="FILE_TYPE_NOT_SUPPORTED"
+    FILE_SIZE_EXCEEDED="FILE_SIZE_EXCEEDED"
+    FILE_UPLOAD_SUCCESS="FILE_UPLOAD_SUCCESS"
+    FILE_UPLOAD_FAILED="FILE_UPLOAD_FAILED"
+    FILE_PROCESSING_FAILED="FILE_PROCESSING_FAILED"
+    FILE_PROCESSING_SUCCESS="FILE_PROCESSING_SUCCESS"
+    FILE_ID_ERROR="no_file_found_with_this_id"
+    PROJECT_NOT_FOUND="project_not_found"
+    INSERT_INTO_VECTORDB_SUCCESS="insert_into_vectordb_success"
+    INSERT_INTO_VECTORDB_ERROR="insert_into_vectordb_error"
+    VECTORDB_COLLECTION_RETRIEVED="vectordb_collection_retrieved"
+    VECTORDB_SEARCH_ERROR="vectordb_search_error"
+    VECTORDB_SEARCH_SUCCESS="vectordb_search_success"
+    RAG_ANSWERING_SUCCESS="rag_answering_success"
+    RAG_ANSWERING_ERROR="rag_answering_error"
